@@ -1,0 +1,85 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('Read, Write, Explore')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/icon.ico'))
+                        ->prependStylesheet($this->basePath() . '/styles/styles.css')
+                        ->prependStylesheet($this->basePath() . '/styles/bootstrap-theme.css')
+                        ->prependStylesheet($this->basePath() . '/styles/bootstrap.css') ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript() ?>
+
+    </head>
+    <body>
+        <!-- HEADING -->
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="logo pull-left">
+
+				</div>
+				<div class="navbar-right">
+					<li >
+						<a>Register</a>
+					</li>
+					<li >
+						| <a>Sign In</a>
+					</li>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="subwrap">
+			<div class="container">
+				<div class="sub">
+
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li >
+						<a href="#">Home</a>
+					</li>
+					<li >
+						<a href="profile.html">Profile</a>
+					</li>
+					<li >
+						<a href="community.html">Community</a>
+					</li>
+					<li >
+						<a href="creator.html">Creator</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /HEADING -->
+
+		<?php echo $this->content; ?>
+			<!-- FOOTER -->
+			<div class="container">
+				<hr />
+				<p>
+					2014 - Team Read, Write, Explore
+				</p>
+			</div>
+		</div>
+        <?php echo $this->inlineScript() 
+            		->prependFile($this->basePath() . '/scripts/rwe.js')
+            		->prependFile($this->basePath() . '/scripts/bootstrap.js')
+            		->prependFile('http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+            		->prependFile('http://code.jquery.com/jquery-1.11.0.min.js') ?>
+    </body>
+</html>

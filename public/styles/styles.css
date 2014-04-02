@@ -1,0 +1,90 @@
+/*Pallete
+ grey= #b9b9b9
+ maroon= #b46c6f
+ orange= #eb9600
+ red= #c84e3e
+ blue= #38617b
+ yellow= #ffeab2;
+ white= #ffffff
+ */
+
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-image: url(../img/bodybg.png);
+}
+
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*:::::::::::::::::::::::::::::::::: NAVIGATION ::::::::::::::::::::::::::::::::::::::*/
+.logo {
+	position: absolute;
+	top: 0;
+	background-image: url(../img/banner.png);
+	height: 150px;
+	width: 120px;
+}
+.navbar {
+	background-color: #38617b;
+}
+li:hover {
+	background-color: #38617b;
+}
+.nav > li > a {
+	color: #FFFFFF;
+	font-size: large;
+}
+.navwrap {
+	background-color: #38617b;
+	height: 4px;
+}
+.navbar-right {
+	margin-top: 10px;
+	float: right;
+}
+.navbar-right > li {
+	display: inline;
+	font-size: large;
+}
+.navbar-right > li:hover {
+	background-color: #38617b;
+}
+.navbar-right > li > a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.navbar-right > li > a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/*:::::::::::::::::::::::::::::::::: /NAVIGATION ::::::::::::::::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::::::::::::::::: SUB ::::::::::::::::::::::::::::::::::::::*/
+
+.subwrap {
+	height: 250px;
+	background-image: url(../img/navcover.png);
+}
+.sub {
+	height: 200px;
+}
+
+/*:::::::::::::::::::::::::::::::::: /SUB ::::::::::::::::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::::::::::::::::: Profile ::::::::::::::::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::::::::::::::::: /Profile ::::::::::::::::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::::::::::::::::: Creator ::::::::::::::::::::::::::::::::::::::*/
+
+.creator {
+	height: 800px;
+	width: 100%;
+	background-color: #3071A9;
+}
+
+/*:::::::::::::::::::::::::::::::::: /Creator ::::::::::::::::::::::::::::::::::::::*/

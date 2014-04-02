@@ -50,6 +50,18 @@ return array(
                     ),
                 ),
             ),
+            'profile' => array(
+                'type'    => 'Segment',
+                'options' => array(
+                    'route'    => '/user/:id',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller'    => 'Profile',
+                        'action'        => 'index',
+                        'id'            => 0
+                    ),
+                ),
+            ),
         ),
     ),
     'service_manager' => array(
